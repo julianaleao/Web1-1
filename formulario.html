@@ -1,0 +1,98 @@
+
+<DOC TYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> Calendario 2013</title>
+
+		<link rel="stylesheet" href="css.css" type="text/css">
+
+</head>
+		
+<body>
+
+
+
+	<div id="conteinerh">
+		<div id="header">
+			<img src="img/logo.png" id="img1" > </img>
+			<p id="txthead">Tecnologia em Sistemas<br>
+							 para Internet</p>
+		</div>
+
+			<div id="tb">
+				<a id="menu"  href= "index.html" target= "Principal">  Home  </a>
+				<a id="menu"  href="formulario.html" target = "Principal">  Formulário</a> 
+				<a id="menu"  href="CALENDARIO.html" target="Principal"> Calendário </a>
+			</div>
+
+
+
+	<form>
+		<div id="tl"> Cadastro</div>
+		
+		<FIELDSET id="f">
+			<LEGEND id="tit"> Dados Pessoais </LEGEND>
+			Nome: <INPUT TYPE="TEXT" NAME="Nome" size="70" ><br>
+			Sexo:<SELECT name=" local">
+				<OPTION >Feminino</OPTION>
+				<OPTION>Masculino</OPTION>
+			</SELECT><br>
+			Data de Nascimento: <input type=number name="dia" required min="1"max="31" SIZE="2" MAXLENGHT="3">
+								<input type=number name="mes" required min="1"max="12" SIZE="2" MAXLENGHT="3">
+								<input type=number name="ano" required min="1990"max="2013" SIZE="4" MAXLENGHT="5"><br>
+			RG:<input type="number" name="rg" required min=""max="2013" SIZE="8" MAXLENGHT="8">
+			   <input type="number" name="rg1" required min="0"max="9" SIZE="2" MAXLENGHT="2">
+			CPF:<input type="number" name="cpf" required min="00000000" SIZE="12" MAXLENGHT="12">
+		</FIELDSET>
+		<br>
+		<FIELDSET id="f">
+			<LEGEND id="tit"> Endereço </LEGEND>
+			Rua: <INPUT TYPE="TEXT" NAME="Nome" SIZE="70" MAXLENGHT="70"><br>
+			Número: <input type="number" name="num" required min="000"max="9999" SIZE="4" MAXLENGHT="4"><br>
+			Cidade:<INPUT TYPE="TEXT" NAME="cidade" SIZE="55" MAXLENGHT="55"><br>
+			Bairro:<INPUT TYPE="TEXT" NAME="bairro" SIZE="30" MAXLENGHT="30"><br>
+			CEP:<input type="number" name="cep" required min="0000000"max="9999999" SIZE="7" MAXLENGHT="7">
+		</FIELDSET>
+		<br>
+
+		<FIELDSET id="f">
+			<LEGEND id="tit"> Dados Profissionais </LEGEND>
+			Empresa: <INPUT TYPE="TEXT" NAME="Nome" SIZE="70" MAXLENGHT="70"><br>
+			Rua: <INPUT TYPE="TEXT" NAME="Nome" SIZE="70" MAXLENGHT="70"><br>
+			Número: <input type="number" name="num" required min="000"max="9999" SIZE="4" MAXLENGHT="4"><br>
+			Bairro:<INPUT TYPE="TEXT" NAME="bairro" SIZE="30" MAXLENGHT="30">
+			CEP:<input type="number" name="cep" required min="0000000"max="9999999" SIZE="7" MAXLENGHT="7"><br>
+			Cargo: <INPUT TYPE="TEXT" NAME="Nome" SIZE="70" MAXLENGHT="70"> 
+			Salário:<input type="salario" name="cep" SIZE="7" MAXLENGHT="7"><br>
+			Função:<br><TEXTAREA COLS=50 ROWS=3 NAME="comentario"> </TEXTAREA>
+		</FIELDSET>
+
+		<br>
+		<FIELDSET id="f">
+			<LEGEND id="tit"> Informações Escolares </LEGEND>
+			Ensino:<SELECT name=" ens">
+							<OPTION>Fundamental</OPTION>
+							<OPTION>Medio</OPTION>
+					</SELECT>
+					<SELECT name=" ens">
+							<OPTION>Completo</OPTION>
+							<OPTION>Incompleto</OPTION>
+					</SELECT><br>
+			Instituição de Ensino:<INPUT TYPE="TEXT" NAME="medio" SIZE="70" MAXLENGHT="70"><br>
+			Ano de Conclusão:<input type="number" name="ano1" required min="1950"max="2013" SIZE="4" MAXLENGHT="4"><br>
+			Ensino Superior:<SELECT name=" ens sup">
+								<OPTION>Completo</OPTION>
+								<OPTION>Incompleto</OPTION>
+							</SELECT><br>
+			Instituição de Ensino:<INPUT TYPE="TEXT" NAME="medio" SIZE="70" MAXLENGHT="70"><br>
+			Ano de Conclusão:<input type="number" name="ano1" required min="1950"max="2013" SIZE="4" MAXLENGHT="4">
+	
+		</FIELDSET>
+		<input type="submit" id="enviar">
+	</form>
+	</div>
+</body>
+</html>
+
+
