@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Home </title>
+
+	<script>
+
+		var bt;
+		function load() {
+			bt = document.getElementById("press");
+			erase();
+		}
+		function set(message) {
+			bt.value = message;
+			setTimeout("erase()",2000);
+		}
+		function erase() {
+			bt.value = "nenhum botão";
+		}
+
+		function button(){
+			document.write('<input type ="button" value ="Terceiro Botão" /> <br> <input type ="button" value ="Quarto Botão" />');
+			setTimeout("alert('THE END')",2000);
+		}
+
+	
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+
+<body onload='load();' >
+
+	O botão pressionado foi:
+	<input type ="text" id ="press" readonly ="X" /><BR>
+	<input type ="button" onclick ="button()" value ="Primeiro botão" /><BR>
+	<input type ="button" onclick ="set('Segundo')" value ="Segundo botão" />
+
+</body>
+
+

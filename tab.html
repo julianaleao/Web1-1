@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Home </title>
+
+	<script>
+
+		var tabVal, tab;
+		function load( ) {
+			tabVal = document.getElementById("tabVal");
+  			tab = document.getElementById("tab");
+		}
+
+
+
+		function tabmultiplicacao() 
+		{
+			tab.value = "";
+			var val = Number(tabVal.value), line;
+			for ( var i=1; i <= 10 ; ++i ){
+			line= val + " X " + i + " = " + ( val * i );
+			tab.value += line + "\n";
+		}}
+
+		function tabsoma() 
+		{
+			tab.value = "";
+			var val = Number(tabVal.value), line;
+			for ( var i=1; i <= 10 ; ++i ){
+			line= val + " + " + i + " = " + ( val + i );
+			tab.value += line + "\n";
+		}}
+
+			function tabsub() 
+		{
+			tab.value = "";
+			var val = Number(tabVal.value), line;
+			for ( var i=1; i <= 10 ; ++i ){
+			line= val + " - " + i + " = " + ( val - i );
+			tab.value += line + "\n";
+		}}
+
+			function tabdivisao() 
+		{
+			tab.value = "";
+			var val = Number(tabVal.value), line;
+			for ( var i=1; i <= 10 ; ++i ){
+			line= val + " / " + i + " = " + ( val / i );
+			tab.value += line + "\n";
+		}}
+
+
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+
+<body onload='load();' >
+
+	Digite o numero que deseja para calcular a Tabuada:<br>
+	<input type="text" id="tabVal" value="" maxLength="2" />
+	<br /><br />
+
+	Escolha a Tabuada que deseja calcular:
+
+	<br><br>
+	<input type ="button" onclick ="tabmultiplicacao()" value ="Tabuada Multiplicação" />
+	<input type ="button" onclick ="tabsoma()" value ="Tabuada Soma" />
+	<input type ="button" onclick ="tabsub()" value ="Tabuada Subtração" />
+	<input type ="button" onclick ="tabdivisao()" value ="Tabuada Divisão" />
+
+	<br><br>
+	<textarea id="tab" rows="10" cols="15" readonly="">
+	</textarea>
+</body>
+
+

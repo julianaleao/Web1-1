@@ -1,0 +1,59 @@
+
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+
+		var p1,p2,p3,p4 ;
+		function load() {
+			p1 = document.getElementById("name");
+			p2 = document.getElementById("ANasc");
+			p3 = document.getElementById("Adm");
+			p4= document.getElementById("Sx");
+	
+		}
+
+
+		function button(){
+			var nome = (p1.value);
+			var nascimento = Number(p2.value);
+			var admit= Number(p3.value);
+			var sexo = (p4.value);
+
+			if((sexo=='f')||(sexo=='F')){
+				if((((2013-nascimento)>=60)||((2013-admit)>=25))||(((2013-nascimento)>=55)&&((2013-admit)>=20)) ) {
+					alert(nome +" está qualificada para aposentar");
+				}else{
+					alert(nome +" não está qualificada para aposentar");
+				}
+			}
+			if((sexo=='m')||(sexo=='M')){
+				if((((2013-nascimento)>=65)||((2013-admit)>=30))||(((2013-nascimento)>=60)&&((2013-admit)>=25)) ) {
+					alert(nome +" está qualificado para aposentar");
+				}else{
+					alert(nome +" não está qualificado para aposentar");
+				}
+			}
+		}
+
+	</script>
+</head>
+
+<body onload='load()'>
+	<p> Nome:
+	<input type ="text" id ="name"  value="" maxLength="40" />
+	<p> Ano de Nascimento:
+	<input type ="text" id ="ANasc" value="" maxLength="10" />
+	<p> Ano de Admissão:
+	<input type ="text" id ="Adm" value="" maxLength="10" />
+	<p> Sexo:
+	<input type ="text" id ="Sx" value="" maxLength="1" />
+
+	<input type ="button" onclick ="button()" value ="Enviar" />
+
+	</p>
+</body>
+
+</html>
