@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Home </title>
+	
+
+	 <script>
+
+
+
+	function verde(num){
+
+
+
+
+
+		document.getElementById("seat0" + num ).src = "img/vermelha.jpg";
+		var nome = prompt("Digite seu nome para reservar a passagem :");
+
+		
+			localStorage.setItem(num, nome);
+			document.getElementById("seat0" + num).title=nome;
+	}
+
+	
+	</script>
+
+</head>
+
+<body  >
+
+	<div ><img id="seat01"  title="Poltrona Vazia"  src="img/verde.jpg" onclick ="verde(1)"/>  </div>
+	<div ><img id="seat02"  title="Poltrona Vazia"  src="img/verde.jpg"  onclick ="verde(2)"/>  </div>
+	<div ><img id="seat03"  title="Poltrona Vazia"  src="img/verde.jpg"   onclick ="verde(3)"/>  </div>
+	<div ><img id="seat04"  title="Poltrona Vazia"  src="img/verde.jpg"  onclick ="verde(4)" />  </div>
+
+
+
+
+	
+</body>
+
+</html>
+

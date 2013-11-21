@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Home </title>
+
+	<script>
+		
+
+		function jogar() {
+			var numero=1+Math.floor(Math.random()*6);
+
+			var canvas = document.getElementById("myCanvas");
+			
+				ctx=canvas.getContext("2d");
+			
+		if (numero==1){
+			
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.arc(70,70,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+			}
+
+		if (numero==2){
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,90,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,50,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+		}
+
+		if (numero==3){
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,70,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+			}
+
+		if (numero==4){
+
+
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+		}
+
+		if(numero==5){
+
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(70,70,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+		}
+		if (numero==6){
+			ctx.beginPath();
+				ctx.strokeStyle = '#f00';
+				ctx.lineWidth = 2;
+				ctx.fillStyle = 'rgba(0,255,0,255)';
+				ctx.fillRect(20,20, 100,100);
+				ctx.strokeRect(20,20, 100,100);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,40,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,100,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(100,70,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.arc(40,70,10, 0, Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+
+		}
+		}
+
+
+
+
+	</script>
+
+</head>
+
+<body >
+<canvas id="myCanvas" with="200" heigth="100"></canvas><br>
+<input type ="button" onclick ="jogar()" value ="Jogar" />
+
+	
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Home </title>
+	<style>
+
+	</style>
+
+	<script>
+		window.onload=function(){
+			var canvas = document.getElementById("myCanvas");
+
+			ctx=canvas.getContext("2d");
+			
+				}
+
+		function japao (){
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(255,255,255,255)';
+					ctx.fillRect(1,10, 300,220);
+					ctx.strokeRect(1,10, 300,220);
+
+				ctx.beginPath();
+					ctx.strokeStyle='#f00';
+					ctx.fillStyle='#f00';
+					ctx.arc(140,110,60, 0, Math.PI*2, true);
+					ctx.fill();
+					ctx.stroke();
+		}
+
+		function alemanha (){
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 2;
+					ctx.fillStyle = 'rgba(255,255,255,255)';
+					ctx.fillRect(1,10, 300,220);
+					ctx.strokeRect(1,10, 300,220);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(0,0,0,255)';
+					ctx.fillRect(1,10, 300,73);
+					ctx.strokeRect(1,10, 100,73);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(255,0,0,255)';
+					ctx.fillRect(1,83, 300,73);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(255,255,0,255)';
+					ctx.fillRect(1,156, 300,73);
+					
+		}
+
+		function belgica (){
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 2;
+					ctx.fillStyle = 'rgba(255,255,255,255)';
+					ctx.fillRect(1,10, 300,220);
+					ctx.strokeRect(1,10, 300,220);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(0,0,0,255)';
+					ctx.fillRect(1,10, 100,220);
+					ctx.strokeRect(1,10,100,220);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(255,0,0,255)';
+					ctx.fillRect(100,10, 100,220);
+
+				ctx.beginPath();
+					ctx.strokeStyle = '#000';
+					ctx.lineWidth = 1;
+					ctx.fillStyle = 'rgba(255,255,0,255)';
+					ctx.fillRect(200,10, 100,220);
+					
+		}
+
+
+
+	</script>
+
+</head>
+
+<body >
+<input type ="button" onclick ="alemanha()" value ="Alemanha" />
+<input type ="button" onclick ="belgica()" value ="Bélgica" />
+<input type ="button" onclick ="japao()" value ="Japão" />
+
+<div id="japao">
+	<canvas id="myCanvas" width="800" height="400"></canvas>
+</div>
+
+
+
+	
+</body>
+
+</html>
